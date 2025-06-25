@@ -7,6 +7,6 @@ always@(posedge clk) begin
 if(rst)
 out<=4'b0000;
 else 
-out<={in,out[3:1]};
+  out<={out[2:0],in};
 end
 endmodule
